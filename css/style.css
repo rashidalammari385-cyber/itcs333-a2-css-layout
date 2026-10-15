@@ -5,3 +5,39 @@
 /* TODO: style .card (padding, border, gap) and .card-grid (display, gap, 3 columns) */
 /* TODO: style form inputs (padding) and a :focus state */
 /* TODO: add a @media (max-width: 700px) query collapsing .card-grid to one column */
+
+/* General page styling */
+
+/* Header */
+#site-header {
+  padding: 16px;
+  border-bottom: 1px solid black;
+}
+
+/* Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card {
+  padding: 12px;
+  border: 1px solid black;
+}
+
+/* Form inputs*/ 
+.register-form input {
+  padding: 6px;
+}
+
+.register-form input:focus {
+  outline: 2px solid blue;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
